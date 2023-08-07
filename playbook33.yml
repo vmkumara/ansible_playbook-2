@@ -1,0 +1,14 @@
+---
+- name: login in to docker registry and oush a docker image
+  hosts: all
+  tasks:
+    - name: login into dockerhub
+      docker_login:
+        username: intelliqit
+        password: intelliqit
+    - name: upload the docker image
+      docker_image:
+        name: intelliqit/ubuntu34
+        push: true
+        source: local
+...
