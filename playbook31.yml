@@ -18,7 +18,7 @@
         links:
           - myjenkins:jenkins
       with_items:
-          - {a: qaserver,b: "660:8080"}
+          - {a: qaserver,b: "6060:8080"}
           - {a: prodserver,b: "7070:8080"}
 
 ...
